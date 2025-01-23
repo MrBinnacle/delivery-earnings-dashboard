@@ -1,30 +1,52 @@
 # Environment and Credentials
-.env                         # API keys and sensitive configurations
+.env                           # API keys and sensitive configurations
 
 # Compiled Python Files
-*.py[cod]                    # Compiled bytecode
-__pycache__/                 # Python cache directory
-*.pyo                        
+*.py[cod]                      # Compiled bytecode
+__pycache__/                   # Python cache directory
+*.pyo                          # Older Python versions bytecode
+*.pyd                          # Python DLLs on Windows
 
 # Machine Learning Models
-models/                      # Trained models
-*.pkl                        # Pickled files (e.g., ML models)
+models/                        # Trained models
+*.pkl                          # Pickled files (e.g., ML models)
+*.h5                           # HDF5 files
+*.joblib                       # Joblib files
 
 # Dataset Files
-data/DoorDash_Mock_Data.csv  # Mock dataset for local testing
-data/*.csv                   # Any additional local CSV files
-*.db                         # SQLite databases (if applicable)
+data/DoorDash_Mock_Data.csv    # Mock dataset for local testing
+data/*.csv                     # Any additional local CSV files
+*.db                           # SQLite databases (if applicable)
+*.npz                          # Compressed NumPy arrays
+*.npy                          # NumPy data files
 
 # Logs and Outputs
-*.log                        # Log files
-*.out                        # Output files
-*.txt                        # Debugging or temporary text files
+*.log                          # Log files
+*.out                          # Output files
+*.txt                          # Debugging or temporary text files
 
 # IDE and OS Files
-.vscode/                     # VS Code workspace settings
-.DS_Store                    # macOS system files
-Thumbs.db                    # Windows system files
+.vscode/                       # VS Code workspace settings
+.idea/                         # PyCharm workspace settings
+*.sublime-workspace            # Sublime Text workspace settings
+.DS_Store                      # macOS system files
+Thumbs.db                      # Windows system files
+*.iml                          # IntelliJ IDEA workspace files
 
 # Virtual Environment
-venv/                        # Python virtual environment folder
-*.env                        # Environment folders/files
+venv/                          # Python virtual environment folder
+*.env                          # Environment folders/files
+
+# Test and Coverage Results
+.pytest_cache/                 # Pytest cache files
+.tox/                          # Tox testing environments
+.coverage                      # Coverage report
+coverage.xml                   # Coverage XML report
+*.cover                        # Coverage data files
+
+# Utilities
+*_utils.py                     # Utils files
+
+# Jupyter Notebook
+.ipynb_checkpoints             # Checkpoint files for Jupyter Notebooks
+*.ipynb                        # Jupyter Notebook files
