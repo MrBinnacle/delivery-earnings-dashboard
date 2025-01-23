@@ -1,14 +1,30 @@
-# Ignore Python cache files
-__pycache__/
-*.pyc
-*.pyo
+# Environment and Credentials
+.env                         # API keys and sensitive configurations
 
-# Ignore virtual environment folder
-venv/
+# Compiled Python Files
+*.py[cod]                    # Compiled bytecode
+__pycache__/                 # Python cache directory
+*.pyo                        
 
-# Ignore environment variables
-.env
+# Machine Learning Models
+models/                      # Trained models
+*.pkl                        # Pickled files (e.g., ML models)
 
-# Ignore data and model files
-/data/*.csv
-/models/*.pkl
+# Dataset Files
+data/DoorDash_Mock_Data.csv  # Mock dataset for local testing
+data/*.csv                   # Any additional local CSV files
+*.db                         # SQLite databases (if applicable)
+
+# Logs and Outputs
+*.log                        # Log files
+*.out                        # Output files
+*.txt                        # Debugging or temporary text files
+
+# IDE and OS Files
+.vscode/                     # VS Code workspace settings
+.DS_Store                    # macOS system files
+Thumbs.db                    # Windows system files
+
+# Virtual Environment
+venv/                        # Python virtual environment folder
+*.env                        # Environment folders/files
